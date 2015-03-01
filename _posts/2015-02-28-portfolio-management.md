@@ -6,6 +6,7 @@ title: Portfolio Management
 The return on a risky invesment may be measured using the expected value or $E(X)$, where $X$ is the random varaible that represent the amount of money to be received at the end. Risk may be measured by the variance of the random variable corresponding to return. Alternatively, one can also use the standard deviation which in certain cases is more convenient (when compared to variance) since the unit is same as the unit of return.
 
 ## Two securities
+
 Let us prepare a portfolio $V$ whose value at time $t$ is given by $V(t)$ and consider two stocks $S_1$ and $S_2$ whose values at time $t$ is represented by $S_1(t)$ and $S_2(t)$ and define weights $w_1$ and $w_2$ by 
 $$ w_1 = \frac{x_1 S_1(0)}{V(0)}, \quad w_2 = \frac{x_2 S_2(0)}{V(0)},$$ 
 where $x_1$ and $x_2$ are share numbers of stock $1$ and stock $2$.
