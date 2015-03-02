@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Portfolio Management
+comments: True
 ---
 
 The return on a risky invesment may be measured using the expected value or $E(X)$, where $X$ is the random varaible that represent the amount of money to be received at the end. Risk may be measured by the variance of the random variable corresponding to return. Alternatively, one can also use the standard deviation which in certain cases is more convenient (when compared to variance) since the unit is same as the unit of return.
