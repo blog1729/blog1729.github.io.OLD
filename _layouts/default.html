@@ -21,6 +21,7 @@
 
       <div class="container content">
         {{ content }}
+	{% include comment.html %}
       </div>
     </div>
 
@@ -43,8 +44,6 @@
         }, false);
       })(document);
     </script>
-    
-    {% include comment.html %}
 
   </body>
 </html>
