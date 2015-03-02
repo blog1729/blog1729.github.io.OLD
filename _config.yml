@@ -13,7 +13,7 @@ title:               Blog1729
 tagline:             Notes and other things
 description:         Some of my notes.
 url:                 http://blog1729.github.io
-baseurl:             /
+baseurl:             http://blog1729.github.io/
 paginate:            5
 
 # About/contact
