@@ -53,6 +53,7 @@ $$w_1 = \frac{\sigma_2}{\sigma_1+\sigma_2}, \quad w_2 = \frac{\sigma_1}{\sigma_1
 </blockquote>
 
 The last theorem can be easily verified.
+
 ## References
 
 1. Mathematics for finance, Marek Capinski and Thomasz Zastawniak.
