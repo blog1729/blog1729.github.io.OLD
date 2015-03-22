@@ -111,7 +111,23 @@ This ration is known as **optimal hedge ratio**. If the interest rate is constan
 
 A **stock exchange index** is a weighted average of a selection of stock prices with weights proportional to the market capitalization of stocks. An index of this kind is approximately proportional to the market portfolio. We can treat index as a security, for the purpose of the futures market.
 
+#### Beta factor
 
+(Topic from Portfolio management)
+
+It is important to understand how the return $K_V$ of a given portfolio or a single security will react to trends affecting the whole market. To this end, we can plot the values of $K_V$ for each market scenario agains those of the return $K_M$ on the market portfolio and compute the line of best fit, also known as the regression line or the charecterestic line. The equation of the best fit will be
+
+$$ K_V = \beta_V x + \alpha _ V. $$
+
+One can show that the gradient $\beta_V$ and the intercept $\alpha_V$ of the line of best fit,
+
+$$ \beta_V = \frac{\text{Cov}(K_V, K_M)}{\sigma^2_M}, \quad \alpha_V = \mu_V - \beta_V\mu_M. $$
+
+Further, it can be shown that the expected return of a portfolio $\mu_V$ is a linear function of the beta coefficient $\beta_V$ of the portfolio,
+
+$$ \mu_V = r_F + (\mu_M - r_F) \beta_V.$$
+
+where $r_F$ is the risk free return rate. 
 
 * * * 
 
