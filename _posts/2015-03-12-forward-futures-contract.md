@@ -111,6 +111,8 @@ This ration is known as **optimal hedge ratio**. If the interest rate is constan
 
 A **stock exchange index** is a weighted average of a selection of stock prices with weights proportional to the market capitalization of stocks. An index of this kind is approximately proportional to the market portfolio. We can treat index as a security, for the purpose of the futures market.
 
+* * * 
+
 #### Beta factor
 
 (Topic from Portfolio management)
@@ -127,7 +129,31 @@ Further, it can be shown that the expected return of a portfolio $\mu_V$ is a li
 
 $$ \mu_V = r_F + (\mu_M - r_F) \beta_V.$$
 
-where $r_F$ is the risk free return rate. 
+where $r_F$ is the risk free return rate.
+
+The expected return on a portfolio over a time step of length $\tau$ is given by
+
+$$ \mu_V = r_F + (\mu_M - r_F)\beta)V$$
+
+* * * 
+
+By $V(n)$, we shall denote the value of the portfolio at the $n$th time step and we assume that the index is equal to the market portfolio. Hence the futures price is given by
+
+$$ f(n,T) = M(n)(1+r_F)^{T-n}$$
+
+We can form a new porfolio with value $\bar{V}(n)$ by supplementing the original portfolio with $N$ short futures contract on the index with delivery time $T$. The value of the new portfolio at the nth step is given by
+
+$$ \bar{V}(n) = V(n) -n(f(n,T) - f(n-1,T)) $$
+
+The return on the portfolio in the first step is denoted by $K_{\bar{V}}$.
+
+> **Proposition** If
+>
+> $$ N = (\beta_V - a)\frac{(1+r_F)V(0)}{f(0,T)} $$
+>
+> Then $\beta_{\bar{V}} = a$ for any given number $a$.
+
+The proof of the above proposition boils down to calculating $\text{Cov} (K_{\bar{V}}, K_M)/\sigma_M^2$. A straightforward corollary is that when $a=0$, $\beta_{\bar{V}} = 0$ and hence $\mu_{\bar{V}} = r_F$. 
 
 * * * 
 
