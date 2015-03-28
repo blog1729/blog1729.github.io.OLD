@@ -4,7 +4,7 @@ title: About
 ---
 
 <p>Call me X<sup>[1]</sup> (where X can be any name, for example <a href="http://en.wikipedia.org/wiki/Ishmael_%28Moby-Dick%29">Ishmael</a> of the <a href="http://en.wikipedia.org/wiki/Moby-Dick">Moby-dick</a> fame). I enjoy Mathematics (in the purest form) and am forced to learned some&nbsp; Computer-Science and Applied-Mathematics. So, in this blog, it is reasonable to expect things that encompass around the one&rsquo;s I enjoy and the one&rsquo;s I&rsquo;m being forced.</p>
-<p>I usually post about things that I&rsquo;m currently learning. The link <a href="http://blog1729.tumblr.com/archive">archives</a> displays all my posts so far.</p>
+<p>I usually post about things that I&rsquo;m currently learning. The link <a href="http://blog1729.github.io/archive">archives</a> displays all my posts so far.</p>
 <blockquote>
 <p><strong>1729 Trivia</strong><sup>[2]</sup></p>
 <p>$1729 = 12^3 +1 = 10^3+7^3$.</p>
