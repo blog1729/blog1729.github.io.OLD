@@ -31,9 +31,11 @@ Let the list, we referred to in the last paragraph be $Q$, we use a min-heap to 
 
 ## Notes
 
-* The same algorithm can be used for a ternary prefix code, where the tree shall have three nodes (I'm told that this will work).
+* The same algorithm can be used for a ternary prefix code, where the tree shall have three nodes (I am told that this will work).
 * If the frequencies of the alphabet are Fibonacci numbers, then the tree has a particularly simple, predictable form.
-* One can show that a binary tree that is not full cannot correspond to an optimal prefix code. 
+* One can show that a binary tree that is not full cannot correspond to an optimal prefix code.
+
+
 
 
 
