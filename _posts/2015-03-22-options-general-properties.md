@@ -38,3 +38,30 @@ $$ C_E - P_E = S(0) - d_0 - Xe^{-rT} $$
 
 $$ C_E - P_E = S(0)e^{-r_dT} - Xe^{-rT} .$$
 
+> **Theorem** The prices of Americal put and call options with the same strike price $X$ and expiry time $T$ on a stock that pays no dividends satisfy
+>
+> $$ S(0) - Xe^{-rT} \ge C_A - P_A \ge S(0) - X $$
+
+
+## Bounds on option prices
+
+The following inequalities are obvious:
+
+$$ C_E \le C_A, \qquad P_E \le P_A $$
+
+One can also prove the following ones
+
+$$ \begin{align*}
+C_E &< S(0) \\
+S(0) - Xe^{-rT} &\le C_E \\
+P_E &< Xe^{-rT} \\
+-S(0)+Xe^{-rT} & \le P_E
+\end{align*}$$
+
+For dividend paying stocks, the bounds are
+
+$$ \begin{align*}
+\max\{0, S(0) - d_0 - Xe^{-rT}\} &\le C_E \le S(0) - d_0 \\
+\max\{0, -S(0)+d_0+Xe^{-rT}\} &\le P_E < Xe^{-rT} \\
+\end{align*}$$
+
