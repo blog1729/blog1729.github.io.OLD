@@ -149,11 +149,13 @@ P_A(T') &\le P_A(T'')
 ## Time value of options
 
 We use the following terminology. We say that at time $t$ a call option with strike price $X$ is
+
 * *in the money* if $S(t)> X$
 * *at the money* if $S(t)=X$
 * *out of the money* if $S(t)<X$.
 
 Similarly, we say that a put is:
+
 * *in the money* if $S(t)<X$
 * *at the money* if $S(t)= X$,
 * *out of the money* if $S(t)>X$.
