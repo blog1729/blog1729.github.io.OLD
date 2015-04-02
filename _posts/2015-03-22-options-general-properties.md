@@ -150,15 +150,15 @@ P_A(T') &\le P_A(T'')
 
 We use the following terminology. We say that at time $t$ a call option with strike price $X$ is
 
-* *in the money* if $S(t)> X$
-* *at the money* if $S(t)=X$
-* *out of the money* if $S(t)<X$.
+- *in the money* if $S(t)> X$
+- *at the money* if $S(t)=X$
+- *out of the money* if $S(t)<X$.
 
 Similarly, we say that a put is:
 
-* *in the money* if $S(t)<X$
-* *at the money* if $S(t)= X$,
-* *out of the money* if $S(t)>X$.
+- *in the money* if $S(t)<X$
+- *at the money* if $S(t)= X$,
+- *out of the money* if $S(t)>X$.
 
 The terms *deep in the money* and *deep out of the money* is used to say that the difference in the level is very high.
 
