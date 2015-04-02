@@ -65,3 +65,104 @@ $$ \begin{align*}
 \max\{0, -S(0)+d_0+Xe^{-rT}\} &\le P_E < Xe^{-rT} \\
 \end{align*}$$
 
+### European and American calls on Non-dividend paying stock
+
+The prices of American and European call options on a stock that pays no dividends are equal, i.e., $C_A = C_E$, whenever the strike price $X$ and the expiry time $T$ are same for both the options.
+
+### American options
+
+One can easily show the following inequalities
+
+$$ \begin{align}
+(S(0)- Xe^{-rT})^{+} &\le C_A \le S(0) \\
+(-S(0)+X)^{+} &\le P_A \le X \\
+\end{align}$$
+
+## Variables that determine option prices
+
+Here we shall analyze change of one variable keeping the other variables fixed.
+
+## European options
+
+### Strike price $X$
+
+* The function $C_E(X)$ is a decreasing and $P_E(X)$ is an increasing.
+* $C_E(X)$ and $P_E(X)$ are Lipschitz with Lipschitz constant $e^{-rT}$. The following is true provided $X' \le X''$:
+
+	$$\begin{align} C_E(X') - C_E(X'') \le e^{-rT}(X''-X')\\
+	  P_E(X') - P_E(X'') \le e^{-rT}(X''-X') \end{align}$$
+* $C_E(X)$ and $P_E(X)$ are convex functions on $X$.
+
+### Asset price $S$
+
+Here we consider the asset as a portfolio and make conclusions:
+
+* Functions $C_E(S)$ and $P_E(S)$ are increasing and decreasing, respectively. 
+* Suppose that $S' \le S''$, then
+
+$$ \begin{align}
+C_E(S'') - C_E(S') &\le S'' - S' \\
+P_E(S') - P_E(S') & \le S'' - S'
+\end{align}
+$$
+
+* Thus $C_E(S)$ and $P_E(S)$ are Lipschitz functions with a Lipschitz constant $1$.
+* The functions $C_E(S)$ and $P_E(S)$ are convex functions on $S$.
+
+
+## American options
+
+The relations of American options are more or less similar to that of European ones.
+
+### Strike price $X$
+
+* $C_A(X)$ and $P_A(X)$ are decreasing and increasing functions respectively. 
+* Suppose $X' < X''$. Then
+
+$$\begin{align}
+C_A(X') - C_A(X'') \le X'' - X'\\
+P_A(X'') - P_A(X') \le X'' - X'
+\end{align}$$ 
+
+* Thus the functions $C_A(X)$ and $P_A(X)$ are Lipschitz, with a Lipschitz constant $1$.
+
+### Asset price $S$
+
+* $C_A(S)$ and $P_A(S)$ are increasing and decreasing functions respectively.
+* Suppose $S' < S''$ then
+
+$$ C_A(S'')- C_A(S') \le S'' - S' \\
+P_A(S') - P_A(S) \le S'' - S'
+$$
+* The functions $C_A(S)$ and $P_A(S)$ are Lipschitz with a Lipschitz constant $1$.
+* The functions $C_A(S)$ and $P_A(S)$ are convex.
+
+### Dependence on expiry time $T$
+
+* If $T'< T''$, then
+
+$$ \begin{align}
+C_A(T') &\le C_A(T''), \\
+P_A(T') &\le P_A(T'')
+\end{align}$$
+
+## Time value of options
+
+We use the following terminology. We say that at time $t$ a call option with strike price $X$ is
+* *in the money* if $S(t)> X$
+* *at the money* if $S(t)=X$
+* *out of the money* if $S(t)<X$.
+
+Similarly, we say that a put is:
+* *in the money* if $S(t)<X$
+* *at the money* if $S(t)= X$,
+* *out of the money* if $S(t)>X$.
+
+The terms *deep in the money* and *deep out of the money* is used to say that the difference in the level is very high.
+
+**Intrinsic value**: At time $t\le T$, the intrinsic value of a call option with strike price $X$ is equal to $(S(t)-X)^{+}$. The intrinsic value of a put option with the same strike price is $(X-S(t))^{+}$.
+
+**Time value**: The time value of an option is the difference between the price of the option and its intrinsic value.
+
+**Proposition**: For any European or American call or put option with strike price $X$, the time value attains its maximum at $S=X$.
+
