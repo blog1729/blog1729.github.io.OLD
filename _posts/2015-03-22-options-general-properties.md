@@ -26,11 +26,11 @@ $$ (S(T) - X)^{+} - C_{E}e^{rT}$$
 
 >**Theorem** For a stock that pays no dividends the following relation holds between the prices of European calls and put options, both with exercise price $X$ and exercise time $T$:
 >
->$$ C_E - P_E = S(0) - Xe^{rT} $$
+>$$ C_E - P_E = S(0) - Xe^{-rT} $$
 
 The above result can easily be shown using the no-arbitrage principle. By making an equivalence with the forward contracts, we can prove the following results:
 
-* If the stock pays a dividend of $d_0$ in between $0$ and $T$, then the put-call parity relation is given by
+* If the stock pays a dividend of $d_0$ ($d_0$ is the present value of dividend, i.e., if a dividend is paid at time $t$, then $d_0 = de^{-rt}$) in between $0$ and $T$, then the put-call parity relation is given by
 
 $$ C_E - P_E = S(0) - d_0 - Xe^{-rT} $$
 
@@ -41,6 +41,9 @@ $$ C_E - P_E = S(0)e^{-r_dT} - Xe^{-rT} .$$
 > **Theorem** The prices of Americal put and call options with the same strike price $X$ and expiry time $T$ on a stock that pays no dividends satisfy
 >
 > $$ S(0) - Xe^{-rT} \ge C_A - P_A \ge S(0) - X $$
+
+* For a stock that pays a dividend $d_0$ (the present value of dividend), then then the prices of American call and put satisfies $S(0) - Xe^{-rT} \ge C_A - P_A \ge S(0) - d_0 - X$.
+* For a stock that pays dividends continuously, $S(0)- Xe^{-rT} \ge C_A - P_A \ge S(0)e^{-r_dT} - X$, where $r_d$ is the rate at which dividends are paid. 
 
 
 ## Bounds on option prices
@@ -67,16 +70,26 @@ $$ \begin{align*}
 
 ### European and American calls on Non-dividend paying stock
 
-The prices of American and European call options on a stock that pays no dividends are equal, i.e., $C_A = C_E$, whenever the strike price $X$ and the expiry time $T$ are same for both the options.
+*The prices of American and European call options on a stock that pays no dividends are equal*, i.e., $C_A = C_E$, whenever the strike price $X$ and the expiry time $T$ are same for both the options.
 
 ### American options
 
-One can easily show the following inequalities
+One can easily show the following inequalities for American options that pays no dividends. 
 
 $$ \begin{align}
 (S(0)- Xe^{-rT})^{+} &\le C_A \le S(0) \\
 (-S(0)+X)^{+} &\le P_A \le X \\
 \end{align}$$
+
+#### American options that pays dividends
+
+The prices of American put and call options on a stock that pays no dividends satisfy the inequalities
+
+$$
+\begin{align}
+\max \{ 0, S(0) - d_0-Xe^{-rT}, S(0)-X \} &\le C_A < S(0)\\
+\max \{0, -S(0) + d_0 + Xe^{-rT}, -S(0) + X \} &\le P_A < X \\
+\end{align} $$ 
 
 ## Variables that determine option prices
 
@@ -125,6 +138,7 @@ P_A(X'') - P_A(X') \le X'' - X'
 \end{align}$$ 
 
 * Thus the functions $C_A(X)$ and $P_A(X)$ are Lipschitz, with a Lipschitz constant $1$.
+* The functions $C_A(X)$ and $P_A(X)$ are convex functions on $X$. 
 
 ### Asset price $S$
 
@@ -132,8 +146,8 @@ P_A(X'') - P_A(X') \le X'' - X'
 * Suppose $S' < S''$ then
 
 $$ C_A(S'')- C_A(S') \le S'' - S' \\
-P_A(S') - P_A(S) \le S'' - S'
-$$
+P_A(S') - P_A(S) \le S'' - S'$$
+
 * The functions $C_A(S)$ and $P_A(S)$ are Lipschitz with a Lipschitz constant $1$.
 * The functions $C_A(S)$ and $P_A(S)$ are convex.
 

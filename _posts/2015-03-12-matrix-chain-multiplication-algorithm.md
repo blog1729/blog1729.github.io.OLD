@@ -35,3 +35,8 @@ $$ m[i,j] =\left\{
 $$</div>
 
 Then $m[1,n]$ gives the cost of the optimal solutions to sub-problems. In order to trace the solution, we use another array $s[i,j]$ where $s[i,j]$ contains that value of $k$ for which the cost was minimum. Now, dynamic programming can be applied in a bottom-up fashion.
+
+
+## Notes
+
+* A full parenthesization of an $n$-element expression has exactly $n-1$ pairs of parenthesis. This can be easily proved by using recursion.
