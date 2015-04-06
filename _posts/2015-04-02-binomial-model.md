@@ -6,12 +6,12 @@ comments: True
 
 This model is widely used in modelling stock prices. The following are the basic conditions that this model has to satisfy
 
-1. The one step returns $K(n)$ on a stock are identically distributed independent random variables such that
+* The one step returns $K(n)$ on a stock are identically distributed independent random variables such that
 <div>
 $$ K(n) = \left\{ \begin{array}{cc} u & \text{with probability } p \\
 d & \text{with probability } 1-p \\ \end{array} \right.$$</div>
 
-2. The one-step return $r$ on a risk-free investment is the same at each time step and $d<r<u$.
+* The one-step return $r$ on a risk-free investment is the same at each time step and $d<r<u$.
 
 One can show that $S(n)$ can have values $S(0)(1+u)^i(1+d)^{n-i}$ with probaility $\binom{n}{i} p^i(1-p)^{n-i}$. The number $i$ is the number of upward price movements in a random variable and $n-i$ is the number of downward movements.
 

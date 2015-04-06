@@ -11,3 +11,29 @@ comments: True
 It's an immensely useful tool and one we encourage you to use here with Hyde.
 
 Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+
+* * *
+
+**This blog supports Kramdown (a superset of Markdown)**
+
+## Examples
+
+### Code
+
+
+{% highlight cpp linenos %}
+#include<iostream>
+#include<string>
+int main()
+{
+	std::cout<<"What is your name?";
+	std::string name;
+	std::cin>>name;
+	std::cout<<"Hello"<<name<<std::endl;
+	return 0;
+}
+{% endhighlight %}
+
+### Math
+
+$$\int\limits_{0}^{\pi} \sin x \,\text{d}x > 0 $$ 
