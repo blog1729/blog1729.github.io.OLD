@@ -67,8 +67,7 @@ It should be noted that the assumption that the elements are sorted in increasin
 * The same algorithm can be used for a ternary prefix code, where the tree shall have three nodes (For a proof, see [here](https://engineering.purdue.edu/~ee608/handouts/hw10-2007-sol.pdf)). 
 * If the frequencies of the alphabet are Fibonacci numbers, then the tree has a particularly simple, predictable form.
 * One can show that a binary tree that is not full cannot correspond to an optimal prefix code.
-
-
+* Suppose that the frequency of the most frequent entry is less than or equal to $0.33$, then the Huffman code of the alphabet is going to have at least two bits. 
 
 
 

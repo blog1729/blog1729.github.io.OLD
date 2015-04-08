@@ -10,7 +10,7 @@ $$ A_1A_2\cdots A_n$$
 
 We can evaluate the above matrix by using the standard algorithm which takes time of the order $pqr$ for multiplying matrices of order $A_{p\times q}$ and $B_{q\times r}$. Since multiplication is associative, i.e., $A(BC) = (AB)C$. The same thing evaluated in different ways can differ in time. The goal is to minimize the total time at which the algorithm executes.
 
-We use parenthesis to denote the order in which matrices are multiplied. For example, $(AB)(CD)$ and $(ABC)D$ denote two ways in which we can parenthesize $ABCD$.
+We use parenthesis to denote the order in which matrices are multiplied. For example, $(AB)(CD)$ and $(ABC)D$ denote two ways in which we can parenthesize $ABCD$. Here $p_{i-1} \times p_{i}$ denotes the order of the matrix $A_i$. 
 
 ### Counting the number of parenthesizations
 
@@ -29,7 +29,7 @@ Let us denote the matrix chain by $A_1 \cdots A_n$ and $m[i,j]$ denote the minim
 $$ m[i,j] =\left\{
 \begin{array}{cc}
 0 & i = j \\
-\min_{i \le k \le j}\{ m[i,j] + m[k+1, j] + p_{i-1}p_{k}p_{j} & i<j
+\min_{i \le k < j}\{ m[i,k] + m[k+1, j] + p_{i-1}p_{k}p_{j}\} & i<j 
 \end{array}
 \right.
 $$</div>

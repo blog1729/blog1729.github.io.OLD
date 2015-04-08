@@ -12,8 +12,8 @@ title: Notes
 2. [Random number generation](http://blog1729.github.io/2015/02/18/random-number-generation/)
 
 ### Dynamic programming
-1. Matrix chain multiplication
-2. Optimal binary search trees
+1. [Matrix chain multiplication]({% post_url 2015-03-12-matrix-chain-multiplication-algorithm %})
+2. [Optimal binary search trees]({% post_url 2015-03-19-optimal-binary-search-trees %})
 3. [Knapsack problem]({{url}}/2015/03/27/knapsack-problem/)
 
 ### Greedy algorithms
@@ -23,4 +23,5 @@ title: Notes
 
 ## Miscellaneous 
 1. [Portfolio management](http://blog1729.github.io/2015/02/28/portfolio-management/)
+2. [Types of interest rates: nominal, real and effective](http://www.investopedia.com/articles/investing/082113/understanding-interest-rates-nominal-real-and-effective.asp) [External link]
 

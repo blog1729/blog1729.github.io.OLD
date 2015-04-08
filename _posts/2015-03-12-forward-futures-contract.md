@@ -6,7 +6,7 @@ comments: True
 [^reference]
 **Forward contract** An agreement to buy or sell an asset on a fixed date in the future, called the *delivery time*, for a price specified in advance, called the *forward price*.
 
-**Short forward position** The party who agrees to *sell the asset* is said to be taking a *short forward position*. The other party, who agrees to *buy the asset* at delivery, is said to have a *long forward position*.
+**Short forward position** The party who agrees to **sell the asset** is said to be taking a *short forward position*. The other party, who agrees to *buy the asset* at delivery, is said to have a *long forward position*.
 
 **Notations** The time at which forward contract is exchanged is $0$, delivery time $T$, and the forward price $F(0,T)$. The time $t$ market price of the asset be $S(t)$. (No payment is made by any party at time $0$, when the forward contract is exchanged). The payoff at delivery is $S(T)-F(t,T)$ for a long forward position and $F(t,T)-S(T)$ for a short forward position.
 
