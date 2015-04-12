@@ -38,7 +38,7 @@ title: Exotic options
 
 * A **shout option** is a European option where the holder can "shout" to the writer at one time during its life. At the end of the life of the option, the option holder receives either the usual payoff from a European option or the intrinsic value at the time of shout, whichever is greater.
 * A shout option has some of the same features as a lookback option, but it is considered less expensive.
-* If the holder shouts at time $\tau$ when the asset price is $S\_\tau$, the payoff from the option is $ \max (0, S\_T - S\_{\tau}_) + (S\_\tau - K)$.
+* If the holder shouts at time $\tau$ when the asset price is $S\_\tau$, the payoff from the option is $ \max (0, S\_T - S\_{\tau}) + (S\_\tau - K)$.
 
 ## Exotic options
 
