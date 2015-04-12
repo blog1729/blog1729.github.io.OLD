@@ -38,11 +38,11 @@ title: Exotic options
 
 * A **shout option** is a European option where the holder can "shout" to the writer at one time during its life. At the end of the life of the option, the option holder receives either the usual payoff from a European option or the intrinsic value at the time of shout, whichever is greater.
 * A shout option has some of the same features as a lookback option, but it is considered less expensive.
-* If the holder shouts at time $\tau$ when the asset price is $S_\tau$, the payoff from the option is $ \max (0, S_T - S_{\tau}_) + (S_\tau - K)$.
+* If the holder shouts at time $\tau$ when the asset price is $S\_\tau$, the payoff from the option is $ \max (0, S\_T - S\_{\tau}_) + (S\_\tau - K)$.
 
 ## Exotic options
 
 * Asian options are options where the payoff depends on the average price of the underlying asset during at least some part of the lief of the option.
-* The payoff from an **average price call** is $\max (0, S_{ave} - K)$ and that of an **average price put** is $\max(0, K - S_{ave})$, where $S_{ave}$ is the average value of the underlying asset calculated over a predetermined averaging period.
+* The payoff from an **average price call** is $\max (0, S\_{ave} - K)$ and that of an **average price put** is $\max(0, K - S\_{ave})$, where $S\_{ave}$ is the average value of the underlying asset calculated over a predetermined averaging period.
 * The book, Options, Futures and other derivatives, mentions that the average options are less expensive than regular options.
-* Another Asian option is an **average strike option** which pays off $\max(0, S_T - S_{ave})$ and an **average strike put** pays off $\max(0, S_{ave} - S_{T})$. 
+* Another Asian option is an **average strike option** which pays off $\max(0, S_T - S\_{ave})$ and an **average strike put** pays off $\max(0, S\_{ave} - S\_{T})$. 
