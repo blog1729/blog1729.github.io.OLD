@@ -4,6 +4,34 @@ comments: true
 title: Monte-carlo Simulation Notes-1 
 ---
 
+## $d$-dimensional Normal random variables
+
+* Is characterized by $d$-vector $\mu$, $d\times d$ covariance matrix $\Sigma$. $\Sigma$ should be positive definite and symmetric. The density of the $d$-dimensional normal random variable is given by:
+
+$$\phi_{\mu, \Sigma} = \frac{1}{(2\pi)^{d/2}\vert \Sigma \vert^{1/2}} \exp{\left(-\frac{1}{2}(x-\mu)^{T}\Sigma^{-1}(x-\mu)\right)}.$$
+
+* If $Z \sim \mathcal(0, I)$, then $X = \mu + A Z \sim \mathcal(\mu, AA^{T})$. It remains to find $A$ such that $AA^{T} = \Sigma$. We make use of Cholesky factorization for this.
+
+### Cholesky factorization
+
+* For a $2\times 2$, $\Sigma$, we find a lower triangular matrix with the first row begin $\sigma_1, 0$ and the second row $\rho \sigma_2$, $\sqrt{1-\rho^2}\sigma_2$.
+* In case of bivariate normal, we use the following equations:
+
+$$\begin{align*}
+X_1 &= \mu_1 + \sigma_1 Z_1, \\
+X_2 &= \mu_2 + \rho \sigma_2 Z_1 + \sqrt{1-\rho^2}\sigma_2 Z_2 \\
+\end{align*}$$
+
+* For a general case, with covariance matrix $\Sigma$, we get the following relations
+
+
+$$\begin{align*}
+A_{ij} & = \frac{1}{A_jj}\left(\Sigma_{ij} - \sum_{k=1}^{j-1} A_{ik}A_{jk}\right), j<i \\
+A_{ii} &= \sqrt{\Sigma_{ii} - \sum_{k=1}^{j-1} A^2_{ik}}
+\end{align*}$$
+
+* * *
+
 ## Brownian motion
 * **Wiener process** A Wiener process (or Brownian motion; $W_t$ or $W$) is a time continuous process with the following properties:
 

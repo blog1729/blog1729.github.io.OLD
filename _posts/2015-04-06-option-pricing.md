@@ -11,7 +11,7 @@ comments: True
 
 ## European options in the Binomial tree model
 
-Refer to [Binomial model]({% post_url 2015-04-02-binomial-model %}).  
+Refer to [Binomial model]({% post_url 2015-04-02-binomial-model %}).
 
 ### One step
 
@@ -43,7 +43,7 @@ $$ D(0) = \sum\limits_{k=0}^{N} \binom{N}{k} p^k_{*}(1-p_{*})^{N-k} f(S(0)(1+u)^
 
 ## Cox-Ross-Rubinstein Formula
 
-Let the payoff of a call option with strike price $X$ satisfies $f(x) = 0$ for $x \le X$ which reduces the number of terms in the summation formula given in the previous section. Let $m$ be the smallest non-negative integer such that $S(0)(1+u)^m(1+d)^{N-m}>X$. Hence $$C_E(0) = (1+r)^{-N}\sum\limits_{k=m}^{N}\binom{N}{k}p^K_{*}(1-p_{*})^{N-k}\left(S(0)(1+u)^{k}(1+d)^{N-k} - X \right).$$
+Let the payoff of a call option with strike price $X$ satisfies $f(x) = 0$ for $x \le X$, which reduces the number of terms in the summation formula given in the previous section. Let $m$ be the smallest non-negative integer such that $S(0)(1+u)^m(1+d)^{N-m}>X$. Hence $$C_E(0) = (1+r)^{-N}\sum\limits_{k=m}^{N}\binom{N}{k}p^K_{*}(1-p_{*})^{N-k}\left(S(0)(1+u)^{k}(1+d)^{N-k} - X \right).$$
 
 Further, the expressions of $x(1)$ and $y(1)$ are as follows
 
@@ -60,3 +60,23 @@ If we define $q = p_{*}\frac{1+u}{1+r}$, we can simplify the expression of $x(1)
 $$ \begin{align}
 C_E(0) &= S(0)[1-\Phi(m-1, N, q)] - (1+r)^{-N}X[1-\Phi(m-1, N, p_{*})] \\
 P_E(0) &= -S(0)\Phi(m-1, N, q) + (1+r)^{-N} X \Phi(m-1, N, p_{*}) \\ \end{align}$$ 
+
+* The initial replicating portfolio $x(1)$ and $y(1)$ is given by:
+
+$$ \begin{array}{c| c| c}
+& x(1) & y(1) \\ \hline
+\text{for a call} & 1-\Phi(m-1, N, q) & -(1+r)^{-N}X[1-\Phi(m-1, N, p_{*})] \\
+\text{for a put} & -\Phi(m-1, N, q) & (1+r)^{-N}X \Phi(m-1, N,p_{*})
+\end{array}$$
+
+### American options in the Binomial tree model
+
+
+
+
+* * *
+
+
+## Notes
+
+* For $n$ step binomial model, there will be $n+1$ columns in tree model of stock price (including the initial stock price). 
