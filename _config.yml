@@ -10,8 +10,8 @@ relative_permalinks: true
 
 # Setup
 title:               Blog1729
-tagline:             Notes and other things
-description:         Some of my notes.
+tagline:             Notes and stuff
+description:         $\int_{\partial\Omega} \omega  = \int_{\Omega} \mathrm{d}\omega$
 url:                 http://blog1729.github.io
 baseurl:             /
 paginate:            5
