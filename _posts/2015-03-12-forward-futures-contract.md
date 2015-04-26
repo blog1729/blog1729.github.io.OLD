@@ -42,7 +42,7 @@ Dividends are often paid continuously, with an interest $r_d>0$, the interest is
 >
 > In general, if the contract is initiated at time $t<T$, then
 >
-> $$F(t,T) = S(t)e^{(r-r_d)T}$$
+> $$F(t,T) = S(t)e^{(r-r_d)(T-t)}$$
 
 ## Value of forward contract
 
@@ -120,7 +120,7 @@ A **stock exchange index** is a weighted average of a selection of stock prices 
 
 It is important to understand how the return $K_V$ of a given portfolio or a single security will react to trends affecting the whole market. To this end, we can plot the values of $K_V$ for each market scenario agains those of the return $K_M$ on the market portfolio and compute the line of best fit, also known as the regression line or the charecterestic line. The equation of the best fit will be
 
-$$ K_V = \beta_V x + \alpha _ V. $$
+$$ y = \beta_V x + \alpha _ V. $$
 
 One can show that the gradient $\beta_V$ and the intercept $\alpha_V$ of the line of best fit,
 
@@ -155,6 +155,10 @@ The return on the portfolio in the first step is denoted by $K_{\bar{V}}$.
 > Then $\beta_{\bar{V}} = a$ for any given number $a$.
 
 The proof of the above proposition boils down to calculating $\text{Cov} (K_{\bar{V}}, K_M)/\sigma_M^2$. A straightforward corollary is that when $a=0$, $\beta_{\bar{V}} = 0$ and hence $\mu_{\bar{V}} = r_F$. 
+
+### Notes
+
+* In case of hedging with futures account, there can be a possibility of loss or gain because of the marking to the market payments. But this does not exist when one hedges using a forward contract and the only downside of this is the default risk. 
 
 * * * 
 

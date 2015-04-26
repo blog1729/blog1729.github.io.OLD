@@ -49,3 +49,5 @@ The above diagram represents the profit function in a Butterfly spread.
 * The butterfly spread is usually used when the investor thinks that the stock price is going to be relatively stable.
 
 **Note**: Using the put call parity, one can easily convert spreads modelled via calls into puts and vice-versa. 
+
+**References**. Chapter 10, Trading strategies involving options, Options futures and other derivatives 7ed; John C. Hull. 

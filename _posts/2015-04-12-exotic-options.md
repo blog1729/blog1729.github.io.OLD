@@ -26,7 +26,7 @@ title: Exotic options
 
 ## Binary option
 
-* **Binary options** are options with discontinuous payoffs. An example of a binary option is a **cash-or-nothing** call. This pays of nothing if the asset price ends up below the strike price at time $T$ and pays a fixed amount, $Q$, if it ends up above the strike price. A **cash-or-nothing put** is defined analogously to a cash-or-nothing call. 
+* **Binary options** are options with discontinuous payoffs. An example of a binary option is a **cash-or-nothing** call. This pays off nothing if the asset price ends up below the strike price at time $T$ and pays a fixed amount, $Q$, if it ends up above the strike price. A **cash-or-nothing put** is defined analogously to a cash-or-nothing call. 
 * **Asset-or-nothing call** pays off nothing if the underlying asset price ends up below the strike price and pays the asset price if it ends up above the strike price. Similarly, an **asset-or-nothing** put pays off nothing if the underlying asset price ends up above the strike price and the asset price if it ends up below the strike price.
 * A regular European call option is equivalent to a long position in an asset-or-nothing call and a short position in a cash-or-nothing call, where the cash payoff of the cash-or-nothing call equals the strike price. 
 
@@ -42,7 +42,9 @@ title: Exotic options
 
 ## Exotic options
 
-* Asian options are options where the payoff depends on the average price of the underlying asset during at least some part of the lief of the option.
+* Asian options are options where the payoff depends on the average price of the underlying asset during at least some part of the life of the option.
 * The payoff from an **average price call** is $\max (0, S\_{ave} - K)$ and that of an **average price put** is $\max(0, K - S\_{ave})$, where $S\_{ave}$ is the average value of the underlying asset calculated over a predetermined averaging period.
 * The book, Options, Futures and other derivatives, mentions that the average options are less expensive than regular options.
 * Another Asian option is an **average strike option** which pays off $\max(0, S_T - S\_{ave})$ and an **average strike put** pays off $\max(0, S\_{ave} - S\_{T})$. 
+
+**References**: Chapter 24, Exotic options. Options, Futures and other derivatives, 7th ed; John C. Hull.
