@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Notes
+comments: True
 ---
 
 ## Mathematics
@@ -36,11 +37,12 @@ title: Notes
 ### Financial Engineering-1
 
 1. [Types of interest rates: nominal, real and effective](http://www.investopedia.com/articles/investing/082113/understanding-interest-rates-nominal-real-and-effective.asp) [External link]
-2. [Portfolio management](http://blog1729.github.io/2015/02/28/portfolio-management/)
-3. [Forward and futures contract]({{url}}/2015/03/12/forward-futures-contract/)
-4. [Binomial model]({{url}}/2015/04/02/binomial-model/)
-5. [Options: General properties]({{url}}/2015/03/22/options-general-properties/)
-6. [Option pricing]({{url}}/2015/04/06/option-pricing/)
-7. [Exotic options]({{url}}/2015/04/12/exotic-options/)
-8. [Trading strategies involving options]({{url}}/2015/04/13/trading-strategies-involving-options/)
+3. [Finance Basics]({{url}}/2015/04/25/finance-basics/)
+3. [Portfolio management](http://blog1729.github.io/2015/02/28/portfolio-management/)
+4. [Forward and futures contract]({{url}}/2015/03/12/forward-futures-contract/)
+5. [Binomial model]({{url}}/2015/04/02/binomial-model/)
+6. [Options: General properties]({{url}}/2015/03/22/options-general-properties/)
+7. [Option pricing]({{url}}/2015/04/06/option-pricing/)
+8. [Exotic options]({{url}}/2015/04/12/exotic-options/)
+9. [Trading strategies involving options]({{url}}/2015/04/13/trading-strategies-involving-options/)
 
